@@ -1,0 +1,22 @@
+<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p><button onclick="geoFindMe()">Show my location</button></p>
+    <div id="out"></div>
+    <div id="map"></div>
+
+<script src="checkin.js">
+
+</script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcCBTre4yL0WTbTm8r74MD88MNvr4KD4E&callback=initMap">
+        </script>
+  </body>
+</html>

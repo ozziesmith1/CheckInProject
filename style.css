@@ -1,0 +1,11 @@
+body {
+  padding: 20px;
+  background-color:#ffffc9
+}
+
+p { margin : 0; }
+
+#map {
+  height: 400px;
+  width: 100%;
+}
